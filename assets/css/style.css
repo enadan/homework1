@@ -1,2 +1,48 @@
-div.header{color: red;}
-div.about{color: blue;}
+div.header{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+    width: 960px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    vertical-align: middle;
+    align-content: center;
+}
+
+div.hborder{
+    border-bottom-style: solid;
+    border-color: #cccccc;
+    height: 80px;
+    margin: 0%;
+}
+
+ul{
+    text-align-last: right;
+    float: right;
+}
+
+li{
+    display: inline;
+    list-style-type: none;
+    
+}
+
+li:not(:first-child):before{
+    content: "|";
+}
+    
+
+
+
+h1{
+    color: white;
+    background-color: #4aaaa5;
+    float: left;
+    padding: 10px;
+    margin: auto;
+}
+
+div.main{
+    width: 960px;
+    border-image: 100px 100px 100px 100px;
+    background-image: "C:\BCSclass\hw1\assets\images\bg.png";
+}
