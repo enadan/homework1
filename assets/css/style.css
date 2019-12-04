@@ -1,48 +1,97 @@
-div.header{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0%;
-    width: 960px;
+body{
+    background-color: gray;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #ffffff;
+    border-bottom: 2px solid #cccccc;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.content{
+    width: 960px;
+    margin: 0 auto;
+    background-color: #ffffff;
     vertical-align: middle;
-    align-content: center;
 }
 
-div.hborder{
-    border-bottom-style: solid;
-    border-color: #cccccc;
-    height: 80px;
-    margin: 0%;
+#body{
+    display: grid;
+    margin-top: 150px;
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-ul{
-    text-align-last: right;
+div#title{
+    color: white;
+    background-color: #4aaaa5;
+    float: left;
+    padding: 0 15px 0 15px;
+    margin: auto;
+}
+
+div.tab ul{
+    padding: 0;
+    margin: 23px;
+    list-style: none;
     float: right;
 }
 
 li{
     display: inline;
-    list-style-type: none;
-    
+    /* border: red 5px solid; */
+    margin: 20px;
+    color: #777777;
+    font-size: larges;
 }
 
-li:not(:first-child):before{
-    content: "|";
-}
-    
-
-
-
-h1{
-    color: white;
-    background-color: #4aaaa5;
-    float: left;
-    padding: 10px;
-    margin: auto;
+h2{
+    color: #4aaaa5;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: xx-large;
+    border-bottom: 2px #dddddd solid;
 }
 
-div.main{
+div.body-content{
     width: 960px;
-    border-image: 100px 100px 100px 100px;
-    background-image: "C:\BCSclass\hw1\assets\images\bg.png";
+    height: 500px;
+    /* margin-top: 150px;    */
+}
+
+img{
+    float: left;
+    padding: 20px;
+    height: 300px;
+    width: 300px;
+}
+
+p{
+    float: inline-end;
+    padding: 30px;
+}
+
+.footer{
+    left: 0;
+    bottom: 0;
+    background-color: #666666;
+    text-align: center;
+    vertical-align: 0;
+    position: fixed;
+    width: 100%;
+    border-top: #4aaaa5 8px solid;
+}
+
+.footer p{
+    vertical-align: bottom;
+    padding: 30px 30px 0 30px;
+    color: white;
+}
+
+a{
+    text-decoration: none;
 }
