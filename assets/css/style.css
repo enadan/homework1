@@ -1,6 +1,8 @@
 body{
-    background-color: gray;
+    background:rgb(182, 213, 224, 0.5);
 }
+
+/* I've used bg color instead of img, because for some reason URL didn't work properly */
 
 .header {
     position: fixed;
@@ -21,7 +23,8 @@ body{
 
 #body{
     display: grid;
-    margin-top: 150px;
+    margin-top: 110px;
+    margin-bottom: 130px;
     color: #777777;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -43,7 +46,6 @@ div.tab ul{
 
 li{
     display: inline;
-    /* border: red 5px solid; */
     margin: 20px;
     color: #777777;
     font-size: larges;
@@ -51,16 +53,17 @@ li{
 
 h2{
     color: #4aaaa5;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 20px 15px 10px 15px;
     font-size: xx-large;
     border-bottom: 2px #dddddd solid;
+    padding: 0 0 15px 0;
 }
 
 div.body-content{
-    width: 960px;
-    height: 500px;
-    /* margin-top: 150px;    */
+    width: 958px;
+    height: auto;
+    padding: 0 0 50px 0;
+    border: 1px #dddddd solid;
 }
 
 img{
@@ -80,7 +83,7 @@ p{
     bottom: 0;
     background-color: #666666;
     text-align: center;
-    vertical-align: 0;
+    vertical-align: bottom;
     position: fixed;
     width: 100%;
     border-top: #4aaaa5 8px solid;
@@ -95,3 +98,37 @@ p{
 a{
     text-decoration: none;
 }
+
+.portfolio-box{
+    display: grid;
+    grid-template-columns: 350px 350px;
+    padding: 0 0 30px 0;
+}
+
+.box{
+ margin: 0;
+ padding: 20px 0;
+ }
+ 
+ .box img {
+   width: 250px;
+   height: 170px;
+   border: 0.5px solid silver;
+   margin: 15px;
+ }
+
+
+ input[type=text],.form{
+     width: 922px;
+     margin: 20px auto;
+     padding: 10px 0 10px 0;
+     color: #777777;
+ }
+
+ button{
+     background: #4aaaa5;
+     color: #ffffff;
+     border: 0;
+     height: 40px;
+     width: 100px;
+ }
